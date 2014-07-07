@@ -6,6 +6,7 @@ class CreateTracksTable < ActiveRecord::Migration
       t.integer :est_completion_time
       t.boolean :is_completed
       t.string :prerequisite
+      t.timestamps
     end
   end
 end
