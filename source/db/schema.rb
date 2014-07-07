@@ -11,7 +11,41 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140707062043) do
+ActiveRecord::Schema.define(version: 20140707183355) do
+
+  create_table "resources", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "section_id"
+    t.integer  "track_id"
+    t.string   "title"
+    t.string   "url"
+    t.string   "content"
+    t.string   "type"
+    t.integer  "votes"
+    t.boolean  "is_completed"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "sections", force: true do |t|
+    t.string   "title"
+    t.integer  "track_id"
+    t.integer  "user_id"
+    t.boolean  "is_completed"
+    t.integer  "est_completion_time"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tracks", force: true do |t|
+    t.string   "title"
+    t.integer  "user_id"
+    t.integer  "est_completion_time"
+    t.boolean  "is_completed"
+    t.string   "prerequisite"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

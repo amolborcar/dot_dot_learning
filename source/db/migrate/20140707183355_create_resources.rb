@@ -3,7 +3,7 @@ class CreateResources < ActiveRecord::Migration
     create_table :resources do |t|
       t.integer :user_id
       t.integer :section_id
-      t.ingeger :track_id # may not need this
+      t.integer :track_id # may not need this
       t.string :title
       t.string :url
       t.string :content # if its a tip

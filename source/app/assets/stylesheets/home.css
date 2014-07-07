@@ -2,6 +2,10 @@ html, body {
   height:100%;
 }
 
+.carousel-caption {
+  font-size: 200px
+}
+
 .carousel,
 .item,
 .active {
