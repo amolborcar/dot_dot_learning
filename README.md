@@ -1,2 +1,2 @@
-dot_dot_learning
+DotDot Learning
 ================
