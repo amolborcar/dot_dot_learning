@@ -1,4 +1,10 @@
 <% @track = Track.find(params[:id]) %>
 <h1> <%= @track.title %> </h1>
-
+<% @sections = Section.where(track_id: @track.id) %>
+<% @sections.each do |section| %>
+  <%= section.title %>
+  <br>
+<% end %>
+<% p "!!!!!!" %>
+<% p @sections %>
 <h2> </h2>
