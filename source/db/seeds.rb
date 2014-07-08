@@ -9,7 +9,6 @@
 Track.create(title: "Microeconomics")
 Section.create(title: "Law of Demmand", track_id: 1)
 Section.create(title: "Demmand and prices", track_id: 1)
-Section.create(title: "Demmand and prices", track_id: 1)
 Section.create(title: "Demmand and future prices", track_id: 1)
 Section.create(title: "Demmand and Income, Population, and Prefrence Chances", track_id: 1)
 Section.create(title: "Normal and Inferior Goods", track_id: 1)
