@@ -1,5 +1,6 @@
 <head>
 <link rel="stylesheet" type="text/css" href="../assets/track.css">
+<%= javascript_include_tag "animations" %>
 </head>
 <body>
 
@@ -12,9 +13,7 @@
     <h2><strong> <%= section.title %> </strong></h2>
   </div>
   <%= render 'sections/section_resources', section: section %>
-  <div id ="submit-button">
-    <button type="button" class="btn btn-success">Add Resource</button>
-  </div>
+  <%= render 'sections/submit_resource,' section: section%>
 <% end %>
 
 
