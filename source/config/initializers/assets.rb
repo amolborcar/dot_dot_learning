@@ -8,4 +8,7 @@ Rails.application.config.assets.version = '1.0'
 # Rails.application.config.assets.precompile += %w( search.js )
 
 # Precompile our animations javascript file
-Rails.application.config.assets.precompile += %w( animations.js )
+#Rails.application.config.assets.precompile += %w( animations.js )
+
+# Precompile submission mechanism javascript file
+#Rails.application.config.assets.precompile += %w( resource_submission.js )

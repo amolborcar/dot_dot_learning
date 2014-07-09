@@ -1,6 +1,6 @@
 <head>
 <link rel="stylesheet" type="text/css" href="../assets/track.css">
-<%= javascript_include_tag "animations" %>
+
 </head>
 <body>
 
@@ -9,13 +9,13 @@
 </div>
 
 <% @sections.each do |section| %>
-  <div class="section-title">
-    <h2><strong> <%= section.title %> </strong></h2>
-  </div>
-  <%= render 'sections/section_resources', section: section %>
-  <%= render 'sections/submit_resource', section: section%>
+  <section class="section-<%= section.id %>">
+    <div class="section-title">
+      <h2><strong> <%= section.title %> </strong></h2>
+    </div>
+    <%= render 'sections/section_resources', section: section %>
+    <%= render 'sections/submit_resource', section: section%>
+  </section>
 <% end %>
-
-
 
 </body>

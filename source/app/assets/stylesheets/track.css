@@ -11,6 +11,10 @@
   padding-left: 20vw;
 }
 
-#submit-button{
+.submit-button{
+  padding-left: 20vw;
+}
+
+.submit-textbox-container{
   padding-left: 20vw;
 }

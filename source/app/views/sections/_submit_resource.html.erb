@@ -1,3 +1,13 @@
-<div id ="submit-button">
-    <button type="button" class="btn btn-success">Add Resource</button>
-</div>
+<% if user_signed_in? %>
+  <form>
+    <br>
+    <div class="submit-textbox-container">
+      <input type="text" name="firstname" placeholder="Title">
+      <input type="text" name="lastname" placeholder="http://www.example.com">
+    </div>
+    <br>
+</form>
+  <div class ="submit-button">
+      <button type="button" class="btn btn-success">Add Resource</button>
+  </div>
+<% end %>
