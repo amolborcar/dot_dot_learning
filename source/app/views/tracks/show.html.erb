@@ -1,5 +1,5 @@
 <head>
-<link rel="stylesheet" type="text/css" href="track.css">
+<link rel="stylesheet" type="text/css" href="../assets/track.css">
 </head>
 <body>
 
@@ -11,6 +11,17 @@
   <div class="section-title">
     <h3> <%= section.title %> </h3>
   </div>
+  <% resources = Resource.where(section_id: section.id) %>
+  <% p "!"*25 %>
+  <% p resources %>
+  <% resources.each do |resource| %>
+    <div class="resource-body">
+      <!-- Later this href needs to be changed when support for multiple submission types is added -->
+      <a href="<%=resource.url%>"><%= resource.title %></a>
+
+    </div>
+  <% end %>
+
   <br>
 <% end %>
 
