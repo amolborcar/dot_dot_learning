@@ -20,9 +20,9 @@ ActiveRecord::Schema.define(version: 20140707183355) do
     t.string   "title"
     t.string   "url"
     t.string   "content"
-    t.string   "type"
-    t.integer  "votes"
-    t.boolean  "is_completed"
+    t.string   "media_type",   default: "article"
+    t.integer  "votes",        default: 0
+    t.boolean  "is_completed", default: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

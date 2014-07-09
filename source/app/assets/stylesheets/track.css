@@ -1,0 +1,8 @@
+#track-title{
+  color: #428bca;
+  text-align:center
+}
+
+.section-title{
+  padding-left: 20vw; /*Was using rem but I love how dynamic vw is*/
+}

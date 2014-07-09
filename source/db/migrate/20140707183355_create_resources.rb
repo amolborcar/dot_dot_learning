@@ -7,9 +7,9 @@ class CreateResources < ActiveRecord::Migration
       t.string :title
       t.string :url
       t.string :content # if its a tip
-      t.string :type # the type of res, ex "article", "tip" "video", "tutorial", etc
-      t.integer :votes
-      t.boolean :is_completed
+      t.string :media_type, :default => "article" # the type of res, ex "article", "tip" "video", "tutorial", etc
+      t.integer :votes, :default => 0
+      t.boolean :is_completed, :default => false
       t.timestamps
     end
   end

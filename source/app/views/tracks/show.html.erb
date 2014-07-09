@@ -1,5 +1,19 @@
-<h1><strong> <%= @track.title %> </strong></h1>
+<head>
+<link rel="stylesheet" type="text/css" href="track.css">
+</head>
+<body>
+
+<div id="track-title">
+  <h1><strong> <%= @track.title %> </strong></h1>
+</div>
+
 <% @sections.each do |section| %>
-  <h3> <%= section.title %> </h3>
+  <div class="section-title">
+    <h3> <%= section.title %> </h3>
+  </div>
   <br>
 <% end %>
+
+
+
+</body>
