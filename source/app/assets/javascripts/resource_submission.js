@@ -6,12 +6,10 @@ $(document).ready(function() {
   // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
 
   // var post
-  $(document).on("click", ".submit-button", foo)
+  $(document).on("click", ".submit-button", submitClicked)
 
-  function foo(event){
-    console.log(event.target)
-    console.log("button clicked")
-    alert("submit button pressed!")
+  function submitClicked(event){
+    //AJAX time
   }
 
 //   var updateVoteCount = function(data) {
