@@ -4,25 +4,17 @@
 <body>
 
 <div id="track-title">
-  <h1><strong> <%= @track.title %> </strong></h1>
+  <h1><strong> <%= @track.title%> </strong></h1>
 </div>
 
 <% @sections.each do |section| %>
   <div class="section-title">
-    <h3> <%= section.title %> </h3>
+    <h2><strong> <%= section.title %> </strong></h2>
   </div>
-  <% resources = Resource.where(section_id: section.id) %>
-  <% p "!"*25 %>
-  <% p resources %>
-  <% resources.each do |resource| %>
-    <div class="resource-body">
-      <!-- Later this href needs to be changed when support for multiple submission types is added -->
-      <a href="<%=resource.url%>"><%= resource.title %></a>
-
-    </div>
-  <% end %>
-
-  <br>
+  <%= render 'sections/section_resources', section: section %>
+  <div id ="submit-button">
+    <button type="button" class="btn btn-success">Add Resource</button>
+  </div>
 <% end %>
 
 

@@ -6,3 +6,11 @@
 .section-title{
   padding-left: 20vw; /*Was using rem but I love how dynamic vw is*/
 }
+
+.resource-body{
+  padding-left: 20vw;
+}
+
+#submit-button{
+  padding-left: 20vw;
+}
