@@ -1,10 +1,15 @@
 <div class="resource-body">
 
 
-  <span class="glyphicon glyphicon-hand-up"></span>
+  <span class="glyphicon glyphicon-chevron-up"></span>
   <div class="resource-content">
     <h4><a href="<%= resource.url %>"><%= resource.title %></a></h4>
   </div>
+  <% if resource.media_type == "article" %>
+      <span class="glyphicon glyphicon-globe"></span>
+  <% elsif resource.media_type == "video" %>
+      <span class="glyphicon glyphicon-film"></span>
+    <% end %>
   <div class="resource-section-id">
     <span hidden><%=resource.section_id%></span>
   </div>
