@@ -19,6 +19,7 @@ $(document).ready(function() {
     // section ids.
     //var resourceSectionId = $(data).find("span").html()
     var resourceSectionId = $(data).find(".resource-section-id").find("span").html()
+    // $(data).data('resource-section-id')
     var numberOfSections = $(document).find('.section-section-id').length
 
     for(var i=0; i<numberOfSections; i++){
