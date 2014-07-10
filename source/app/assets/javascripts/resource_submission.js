@@ -15,6 +15,12 @@ $(document).ready(function() {
        type: 'POST',
        data: $(event.target).serialize()
      })
+    createResourceRequest.success(appendNewResource)
+  }
+
+  function appendNewResource(data){
+    debugger
+    //resource_to_append = Resource.where
   }
 
 //   var updateVoteCount = function(data) {

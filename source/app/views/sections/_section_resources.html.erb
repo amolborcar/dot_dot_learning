@@ -1,8 +1,4 @@
 <% resources = Resource.where(section_id: section.id) %>
   <% resources.each do |resource| %>
-    <div class="resource-body">
-      <!-- Later this href needs to be changed when support for multiple submission types is added -->
-      <h4><a href="<%=resource.url%>"><%= resource.title %></a></h4>
-
-    </div>
+    <%= render 'sections/show_resource', resource: resource%>
   <% end %>
