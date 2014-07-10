@@ -9,6 +9,7 @@
 
 .resource-body{
   padding-left: 20vw;
+  margin: 0;
 }
 
 .submit-button{
@@ -18,3 +19,39 @@
 .submit-textbox-container{
   padding-left: 20vw;
 }
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  margin: 0;
+  border-bottom: 7px solid green;
+  float:left;
+  padding-top: 6px;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid black;
+  float:left;
+}
+
+.resource-content{
+  padding-left: 2.5em;
+}
+
+/*.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  margin: 0;
+  border-bottom: 5px solid black;
+  position: relative;
+  top: 15px;
+  left: -18px;
+}*/
