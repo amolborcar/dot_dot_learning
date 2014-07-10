@@ -6,10 +6,15 @@ $(document).ready(function() {
   // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
 
   // var post
-  $(document).on("click", ".submit-button", submitClicked)
-
+  $(document).on("submit", ".submit-resource-form", submitClicked)
+  // ToDo: Add CSRF token
   function submitClicked(event){
-    //AJAX time
+    event.preventDefault()
+    var createResourceRequest = $.ajax({
+       url: '/resources/add',
+       type: 'POST',
+       data: $(event.target).serialize()
+     })
   }
 
 //   var updateVoteCount = function(data) {

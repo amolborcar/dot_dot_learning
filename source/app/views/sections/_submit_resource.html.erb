@@ -1,13 +1,16 @@
 <% if user_signed_in? %>
-  <form>
-    <br>
-    <div class="submit-textbox-container">
-      <input type="text" name="firstname" placeholder="Title">
-      <input type="text" name="lastname" placeholder="http://www.example.com">
-    </div>
-    <br>
-</form>
-  <div class ="submit-button">
-      <button type="button" class="btn btn-success">Add Resource</button>
+  <div class="submit-container">
+    <form class="submit-resource-form">
+      <br>
+      <div class="submit-textbox-container">
+        <input type="text" name="title" placeholder="Descriptive Title">
+        <input type="text" name="url" placeholder="http://www.example.com">
+        <input type="hidden" name="section_id" value=<%=section.id%>>
+      </div>
+      <br>
+      <div class ="submit-button">
+        <input type="submit" class="btn btn-success" value="Add Resource">
+      </div>
+    </form>
   </div>
 <% end %>

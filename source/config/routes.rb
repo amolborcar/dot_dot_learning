@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   # resource :tracks
 
    get '/tracks/:id' => 'tracks#show'
+   post '/resources/add' => 'resources#add'
   # match "/tracks/:id", :controller => 'application',  :action => 'login'
 
   # The priority is based upon order of creation: first created -> highest priority.
