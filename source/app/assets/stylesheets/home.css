@@ -1,8 +1,7 @@
 #first-carousel-caption{
   padding-bottom: 450px;
-  z-index: 10;
   white-space: nowrap;
-  right: 1000px;
+  /*padding-right:200px;*/
 }
 
 .navbar{

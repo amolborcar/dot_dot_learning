@@ -26,10 +26,11 @@
 
 .glyphicon-chevron-up{
   /*font-size: 1.2em;*/
-  /*float: left;
-  padding-top: 2px;*/
-  /*padding-bottom: 10px;
-  display: inline-block;*/
+  float: left;
+  padding-top: 11px;
+  padding-right: 5px;
+  /*padding-bottom: 10px;*/
+  /*display: inline-block;*/
   color: #27ae60;
 }
 

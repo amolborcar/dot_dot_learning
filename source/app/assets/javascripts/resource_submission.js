@@ -18,13 +18,12 @@ $(document).ready(function() {
     // TODO: refactor to be less hideous; Find something better than hidden spans containing
     // section ids.
     //var resourceSectionId = $(data).find("span").html()
-    debugger
     var resourceSectionId = $(data).find(".resource-section-id").find("span").html()
     var numberOfSections = $(document).find('.section-section-id').length
 
     for(var i=0; i<numberOfSections; i++){
       if($(document).find('.section-section-id')[i].innerHTML == resourceSectionId){
-        $(document).find('.section-section-id').parent().eq(i).append(data)
+      $(document).find('.section-section-id').parent().eq(i).append(data)
       }
     }
   }
