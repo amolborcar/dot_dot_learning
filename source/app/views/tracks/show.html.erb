@@ -12,8 +12,14 @@
     <div class="section-title">
       <h2><strong> <%= section.title %> </strong></h2>
     </div>
-    <%= render 'sections/section_resources', section: section %>
-    <%= render 'sections/submit_resource', section: section%>
+
+    <div class="section-and-submission-container">
+      <div class="section-container">
+        <%= render 'sections/section_resources', section: section %>
+        <div class="section-section-id" hidden><%=section.id%></div>
+      </div>
+      <%= render 'sections/submit_resource', section: section%>
+    </div>
 <% end %>
 
 </body>
