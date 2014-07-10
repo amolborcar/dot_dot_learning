@@ -36,5 +36,7 @@ gem 'spring',        group: :development
 # gem 'capistrano-rails', group: :development
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+gem 'debugger', group: [:development, :test]
 
+# If you refactor to not use bootstrap you can still use the icons ("glyphs") with this gem:
+# gem 'bootstrap-glyphicons'
