@@ -1,3 +1,14 @@
+#first-carousel-caption{
+  padding-bottom: 450px;
+  z-index: 10;
+  white-space: nowrap;
+  right: 1000px;
+}
+
+.navbar{
+  margin-bottom: 5px;
+}
+
 html, body {
   height:100%;
 }
