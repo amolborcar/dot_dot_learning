@@ -5,7 +5,8 @@ class ResourcesController < ApplicationController
   def add
     #Find section and add resource
     p "!"*100
-    val = params[:section_id]
-    p val
+    section_id = params[:section_id]
+    p current_user.id
+    Resource.create(user_id: current_user.id, section_id: params[:section_id], title: params[:title], url: params[:url])
   end
 end
