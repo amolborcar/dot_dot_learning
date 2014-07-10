@@ -13,13 +13,7 @@ $(document).ready(function() {
   }
 
   function appendNewResource(data){
-    // This is a heinous way to append, but getting data to add to
-    // the correct section was suprisingly difficult
-    // TODO: refactor to be less hideous; Find something better than hidden spans containing
-    // section ids.
-    //var resourceSectionId = $(data).find("span").html()
-    var resourceSectionId = $(data).find(".resource-section-id").find("span").html()
-    // $(data).data('resource-section-id')
+    var resourceSectionId = $(data).data('resource-section-id')
     var numberOfSections = $(document).find('.section-section-id').length
 
     for(var i=0; i<numberOfSections; i++){
