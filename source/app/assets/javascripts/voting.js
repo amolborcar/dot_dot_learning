@@ -13,16 +13,4 @@ $(document).ready(function() {
      })
     //createResourceRequest.success(appendNewResource)
   }
-
-  function addVote(data){
-    debugger
-    var resourceSectionId = $(data).find(".resource-section-id").find("span").html()
-    var numberOfSections = $(document).find('.section-section-id').length
-
-    for(var i=0; i<numberOfSections; i++){
-      if($(document).find('.section-section-id')[i].innerHTML == resourceSectionId){
-        $(document).find('.section-section-id').parent().eq(i).append(data)
-      }
-    }
-  }
  });

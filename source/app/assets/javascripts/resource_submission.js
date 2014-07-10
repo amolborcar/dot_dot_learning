@@ -14,11 +14,11 @@ $(document).ready(function() {
 
   function appendNewResource(data){
     var resourceSectionId = $(data).data('resource-section-id')
-    var numberOfSections = $(document).find('.section-section-id').length
+    var numberOfSections = $('[data-section-id]').length
 
     for(var i=0; i<numberOfSections; i++){
-      if($(document).find('.section-section-id')[i].innerHTML == resourceSectionId){
-      $(document).find('.section-section-id').parent().eq(i).append(data)
+      if($('[data-section-id]').eq(i).data('section-id') == resourceSectionId){
+      $('[data-section-id]').eq(i).append(data)
       }
     }
   }
