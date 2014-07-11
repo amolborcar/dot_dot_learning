@@ -13,5 +13,15 @@
         <%= render 'sections/section_resources', section: section %>
       </div>
       <%= render 'sections/submit_resource', section: section%>
+
+      <div class="btn-group">
+        <button type="submit" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Submit<span class="caret"></span></button>
+
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+        </ul>
+      </div>
     </div>
 <% end %>
