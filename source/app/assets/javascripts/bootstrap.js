@@ -14,7 +14,6 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap requires jQuery'
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
-
 +function ($) {
   'use strict';
 
@@ -636,7 +635,7 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap requires jQuery'
  * Copyright 2011-2014 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
-
+ $('.dropdown-toggle').dropdown();
 
 +function ($) {
   'use strict';

@@ -3,11 +3,21 @@
 <head>
   <title>DotDotLearning: Crowdsourced Curriculums For All</title>
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../assets/track.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+  <button type="submit" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Submit<span class="caret"></span>
+      </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+  </ul>
+
   <nav class="navbar" role="navigation">
         <div class="container">
             <div class="navbar-header">
