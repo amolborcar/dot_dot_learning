@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DotDot Learning: Crowdsourced Curriculums For All">
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="/app/assets/stylesheets/bootstrap.css" rel="stylesheet"> -->
+    <link href="assets/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="assets/home.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+    <div id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('assets/openSlide1b.jpg');"></div>
+                <div class="carousel-caption">
+                    <!-- Had a hard time overriding carousel-caption so I made a new class -->
+                    <div id="first-carousel-caption">
+                        <div class="carousel-caption-large">
+                            <bold>The Web's Best Learning Resources<br> All In One Place</bold>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('assets/arduino1c.jpg');"></div>
+                <div class="carousel-caption">
+                    <div class="carousel-caption-large">
+                       <bold>Arduino Fundamentals</bold>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('assets/microeconomics1b.jpg');"></div>
+                <div class="carousel-caption">
+                    <div class="carousel-caption-large">
+                       <bold> Microeconomics</bold>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </div>
+
+    <div class="container">
+
+        <div class="row section">
+        <!-- Put more info or something here -->
+        </div>
+
+        <hr>
+
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Brennon Williams 2014, because this <i>totally</i> needs to be copyrighted</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- JavaScript -->
+    <script src="assets/jquery-1.10.2.js"></script>
+    <script src="assets/bootstrap.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+</body>
+
+</html>

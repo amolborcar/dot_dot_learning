@@ -1,0 +1,107 @@
+/*.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 500px;
+  color: #fff;
+  text-align: left;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}*/
+
+/*h4{
+  font-size: 19px;
+}*/
+
+.glyphicon-hand-up{
+  font-size: 1.2em;
+  /*float: left;
+  padding-top: 2px;*/
+  padding-bottom: 10px;
+  display: inline-block;
+  color: #27ae60;
+}
+
+.glyphicon-chevron-up{
+  /*font-size: 1.2em;*/
+  float: left;
+  padding-top: 11px;
+  padding-right: 5px;
+  /*padding-bottom: 10px;*/
+  /*display: inline-block;*/
+  color: #27ae60;
+}
+
+#track-title{
+  color: #428bca;
+  text-align:center
+}
+
+.section-title{
+  padding-left: 20vw; /*Was using rem but I love how dynamic vw is*/
+}
+
+/*.resource-body{
+  padding-left: 20vw;
+  margin: 0;
+}
+
+.submit-button{
+  padding-left: 20vw;
+}
+
+.btn-group{
+  padding-left: 20vw;
+}*/
+
+.section-and-submission-container{
+  padding-left: 20vw;
+}
+
+/*.dropdown-menu{
+  padding-left: 20vw;
+}*/
+
+/*.submit-textbox-container{
+  padding-left: 20vw;
+}*/
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  margin: 0;
+  border-bottom: 7px solid green;
+  float:left;
+  padding-top: 6px;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid black;
+  float:left;
+}
+
+.resource-content{
+  /*padding-left: 1.5em;*/
+  font-size: 20px;
+  display: inline-block;
+}
+
+/*.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  margin: 0;
+  border-bottom: 5px solid black;
+  position: relative;
+  top: 15px;
+  left: -18px;
+}*/
