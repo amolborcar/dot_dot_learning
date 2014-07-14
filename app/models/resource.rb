@@ -1,3 +1,3 @@
 class Resource < ActiveRecord::Base
-  belongs_to :section
+  belongs_to :subsection
 end

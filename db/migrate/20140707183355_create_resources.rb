@@ -2,6 +2,7 @@ class CreateResources < ActiveRecord::Migration
   def change
     create_table :resources do |t|
       t.integer :user_id
+      t.integer :subsection_id
       t.integer :section_id
       t.integer :track_id # may not need this
       t.string :title
