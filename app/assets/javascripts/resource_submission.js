@@ -24,6 +24,8 @@ $(document).ready(function() {
   }
 
   $(document).on("click", ".add-article", addArticleClicked)
+  $(document).on("click", ".add-video", addVideoClicked)
+  $(document).on("click", ".add-interactive", addInteractiveClicked)
 
   function addArticleClicked(event){
     appendResource("article", this, event)
@@ -44,11 +46,5 @@ $(document).ready(function() {
       dropdownButton.hide()
       formContainer.append(data)
     })
-    //createSubmitArticleRequest.success(appendSubmitForm)
   }
-
-  // function appendSubmitForm(data){
-  //   formContainer.append(data)
-  // }
-
  });
