@@ -4,9 +4,9 @@ class ResourcesController < ApplicationController
 
   def add
     #Find section and add resource
-    section_id = params[:section_id]
+    subsection_id = params[:subsection_id]
     p current_user.id
-    resource = Resource.create(user_id: current_user.id, section_id: params[:section_id], title: params[:title], url: params[:url])
+    resource = Resource.create(user_id: current_user.id, subsection_id: params[:subsection_id], title: params[:title], url: params[:url])
     render :_show_resource, locals: {resource: resource}, layout: false
   end
 

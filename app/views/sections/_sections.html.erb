@@ -1,0 +1,6 @@
+<% @subsections.each do |subsection| %>
+  <div class="subsection-title">
+    <h2><strong> <%= subsection.title %> </strong></h2>
+  </div>
+  <%= render 'subsections/subsections', subsection: subsection %>
+<% end %>

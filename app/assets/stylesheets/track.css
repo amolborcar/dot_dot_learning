@@ -43,6 +43,10 @@
   padding-left: 20vw; /*Was using rem but I love how dynamic vw is*/
 }
 
+.subsection-title{
+  padding-left: 20vw;
+}
+
 /*.resource-body{
   padding-left: 20vw;
   margin: 0;
@@ -56,7 +60,7 @@
   padding-left: 20vw;
 }*/
 
-.section-and-submission-container{
+.subsection-and-submission-container{
   padding-left: 20vw;
 }
 

@@ -11,18 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140707183355) do
+ActiveRecord::Schema.define(version: 20140714230254) do
 
   create_table "resources", force: true do |t|
     t.integer  "user_id"
+    t.integer  "subsection_id"
     t.integer  "section_id"
     t.integer  "track_id"
     t.string   "title"
     t.string   "url"
     t.string   "content"
-    t.string   "media_type",   default: "article"
-    t.integer  "votes",        default: 0
-    t.boolean  "is_completed", default: false
+    t.string   "media_type",    default: "article"
+    t.integer  "votes",         default: 0
+    t.boolean  "is_completed",  default: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -30,6 +31,17 @@ ActiveRecord::Schema.define(version: 20140707183355) do
   create_table "sections", force: true do |t|
     t.string   "title"
     t.integer  "track_id"
+    t.integer  "user_id"
+    t.boolean  "is_completed"
+    t.integer  "est_completion_time"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "subsections", force: true do |t|
+    t.string   "title"
+    t.integer  "track_id"
+    t.integer  "section_id"
     t.integer  "user_id"
     t.boolean  "is_completed"
     t.integer  "est_completion_time"

@@ -1,4 +1,4 @@
-<% resources = Resource.where(section_id: section.id) %>
+<% resources = Resource.where(subsection_id: subsection.id) %>
   <% resources.each do |resource| %>
     <%= render 'resources/show_resource', resource: resource%>
   <% end %>

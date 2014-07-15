@@ -13,12 +13,12 @@ $(document).ready(function() {
   }
 
   function appendNewResource(data){
-    var resourceSectionId = $(data).data('resource-section-id')
-    var numberOfSections = $('[data-section-id]').length
+    var resourceSubsectionId = $(data).data('resource-subsection-id')
+    var numberOfSubsections = $('[data-subsection-id]').length
 
-    for(var i=0; i<numberOfSections; i++){
-      if($('[data-section-id]').eq(i).data('section-id') == resourceSectionId){
-      $('[data-section-id]').eq(i).append(data)
+    for(var i=0; i<numberOfSubsections; i++){
+      if($('[data-subsection-id]').eq(i).data('subsection-id') == resourceSubsectionId){
+      $('[data-subsection-id]').eq(i).append(data)
       }
     }
   }
