@@ -33,7 +33,14 @@ $(document).ready(function() {
        type: 'GET',
        data: {media_type: "article"}
      })
-    //createSubmitArticleRequest.success(appendNewResource)
+    .done(function(data) {
+      formContainer.append(data)
+    })
+    //createSubmitArticleRequest.success(appendSubmitForm)
   }
+
+  // function appendSubmitForm(data){
+  //   formContainer.append(data)
+  // }
 
  });
