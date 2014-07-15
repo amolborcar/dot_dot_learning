@@ -15,6 +15,7 @@ $(document).ready(function() {
   function appendNewResource(data){
     var resourceSubsectionId = $(data).data('resource-subsection-id')
     var numberOfSubsections = $('[data-subsection-id]').length
+    debugger
 
     for(var i=0; i<numberOfSubsections; i++){
       if($('[data-subsection-id]').eq(i).data('subsection-id') == resourceSubsectionId){
@@ -29,10 +30,11 @@ $(document).ready(function() {
     event.preventDefault()
     var dropdownButton = $(this).parent().parent().parent().parent()
     var formContainer = $(this).parent().parent().parent().parent().parent().find(".submit-container")
+    var subsectionId = $(this).parent().parent().parent().parent().parent().find('.subsection-container').data('subsection-id')
     var createSubmitArticleRequest = $.ajax({
        url: 'submitforms/add',
        type: 'GET',
-       data: {media_type: "article"}
+       data: {media_type: "article", subsection_id: subsectionId}
      })
     .done(function(data) {
       dropdownButton.hide()
