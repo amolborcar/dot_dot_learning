@@ -27,6 +27,7 @@ $(document).ready(function() {
 
   function addArticleClicked(event){
     event.preventDefault()
+    var dropdownButton = $(this).parent().parent().parent().parent()
     var formContainer = $(this).parent().parent().parent().parent().parent().find(".submit-container")
     var createSubmitArticleRequest = $.ajax({
        url: 'submitforms/add',
@@ -34,6 +35,7 @@ $(document).ready(function() {
        data: {media_type: "article"}
      })
     .done(function(data) {
+      dropdownButton.hide()
       formContainer.append(data)
     })
     //createSubmitArticleRequest.success(appendSubmitForm)
