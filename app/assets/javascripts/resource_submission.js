@@ -18,8 +18,22 @@ $(document).ready(function() {
 
     for(var i=0; i<numberOfSubsections; i++){
       if($('[data-subsection-id]').eq(i).data('subsection-id') == resourceSubsectionId){
-      $('[data-subsection-id]').eq(i).append(data)
+        $('[data-subsection-id]').eq(i).append(data)
       }
     }
   }
+
+  $(document).on("click", ".add-article", addArticleClicked)
+
+  function addArticleClicked(event){
+    event.preventDefault()
+    var formContainer = $(this).parent().parent().parent().parent().parent().find(".submit-container")
+    var createSubmitArticleRequest = $.ajax({
+       url: 'submitforms/add',
+       type: 'GET',
+       data: {media_type: "article"}
+     })
+    //createSubmitArticleRequest.success(appendNewResource)
+  }
+
  });

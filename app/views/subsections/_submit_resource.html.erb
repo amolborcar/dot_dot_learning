@@ -1,6 +1,6 @@
 <% if user_signed_in? %>
   <div class="submit-container">
-    <form class="submit-resource-form">
+    <!-- <form class="submit-resource-form">
       <br>
       <div class="submit-textbox-container">
         <input type="text" name="title" placeholder="Descriptive Title">
@@ -11,6 +11,18 @@
       <div class ="submit-button">
         <input type="submit" class="btn btn-success" value="Add Resource">
       </div>
-    </form>
+    </form> -->
   </div>
+
+
+  <div class="btn-group">
+        <button type="submit" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><strong>+ </strong><span class="caret"></span></button>
+
+        <ul class="dropdown-menu" role="menu">
+          <li><a href=""><div class="add-article">Add Article</div></a></li>
+          <li><a href=""><div class="add-video">Add Video</div></a></li>
+          <li><a href=""><div class="add-interactive">Add Tutorial/Challenge</div></a></li>
+          <li><a href=""><div class="add-tip">Add Tip</div></a></li>
+        </ul>
+      </div>
 <% end %>

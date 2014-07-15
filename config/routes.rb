@@ -8,6 +8,8 @@ Rails.application.routes.draw do
    get '/tracks/:id' => 'tracks#show'
    post '/resources/add' => 'resources#add'
    post '/resources/upvote/:id' => 'resources#upvote'
+
+   get 'tracks/submitforms/add' => 'subsections#create_form'
   # match "/tracks/:id", :controller => 'application',  :action => 'login'
 
   # The priority is based upon order of creation: first created -> highest priority.
