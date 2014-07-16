@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   $(document).on("submit", ".submit-resource-form", submitClicked)
-  // ToDo: Add CSRF token
+  $(this).show()
   function submitClicked(event){
     event.preventDefault()
     var createResourceRequest = $.ajax({
@@ -10,6 +10,8 @@ $(document).ready(function() {
        data: $(event.target).serialize()
      })
     createResourceRequest.success(appendNewResource)
+    $(this).parent().parent().find(".btn-group").show()
+    $(this).hide()
   }
 
   function appendNewResource(data){
@@ -30,16 +32,16 @@ $(document).ready(function() {
   // Using these functions to route to appendResource as params can't be passed in callbacks
   // This is more DRY, I promise
   function addArticleClicked(event){
-    appendResource("article", this, event)
+    addResource("article", this, event)
   }
   function addVideoClicked(event){
-    appendResource("video", this, event)
+    addResource("video", this, event)
   }
   function addInteractiveClicked(event){
-    appendResource("interactive", this, event)
+    addResource("interactive", this, event)
   }
 
-  function appendResource(mediaType, location, event) {
+  function addResource(mediaType, location, event) {
     event.preventDefault()
     var dropdownButton = $(location).closest(".btn-group")
     var formContainer = $(location).parent().parent().parent().parent().parent().find(".submit-container")
