@@ -2,9 +2,8 @@ class SubsectionsController < ApplicationController
 
   def create_form
     @subsection_id = params[:subsection_id]
+    @media_type = params[:media_type]
 
-    if params[:media_type] == "article"
-      render 'subsections/_submit_article_form.html.erb', layout: false
-    end
+    render 'subsections/_submit_resource_form.html.erb', layout: false
   end
 end

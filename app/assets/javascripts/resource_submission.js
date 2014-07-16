@@ -27,8 +27,16 @@ $(document).ready(function() {
   $(document).on("click", ".add-video", addVideoClicked)
   $(document).on("click", ".add-interactive", addInteractiveClicked)
 
+  // Using these functions to route to appendResource as params can't be passed in callbacks
+  // This is more DRY, I promise
   function addArticleClicked(event){
     appendResource("article", this, event)
+  }
+  function addVideoClicked(event){
+    appendResource("video", this, event)
+  }
+  function addInteractiveClicked(event){
+    appendResource("interactive", this, event)
   }
 
   function appendResource(mediaType, location, event) {
@@ -36,7 +44,7 @@ $(document).ready(function() {
     var dropdownButton = $(location).closest(".btn-group")
     var formContainer = $(location).parent().parent().parent().parent().parent().find(".submit-container")
     var subsectionId = $(location).parent().parent().parent().parent().parent().find('.subsection-container').data('subsection-id')
-    debugger
+
     var createSubmitArticleRequest = $.ajax({
        url: 'submitforms/add',
        type: 'GET',
